@@ -1,15 +1,31 @@
 <h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<p>倉儲:<a href="https://github.com/mdecourse/cdbw15-1">https://github.com/mdecourse/cdbw15-1</a></p>
+<p></p>
+<p></p><h1>40723207</h1>
+<p>修改網路介面卡IPV6</p>
+<p><img alt="" height="521" src="http://mde.tw/cdbw14-1/images/2.PNG" width="631"/></p>
+<p><span>2001:288:6004:17</span></p>
+<p>後面我的是 CDB:2 72為乙班 07為學號</p>
+<p>進入<span>Virtual Box</span></p>
+<p>打ifconfig</p>
+<p>查詢IPV6的號碼</p>
+<p><img alt="" height="521" src="http://mde.tw/cdbw14-1/images/3.PNG" width="631"/><img alt="" height="469" src="http://mde.tw/cdbw14-1/images/3.PNG" width="671"/></p>
+<p>修改<span>Virtual Box的nat的網路設定</span></p>
+<p>接下來輸入cd tmp &gt;<span>cd cd2020pj1 &gt;cd docs &gt;cd cmsimde &gt;vi wsgi.py</span></p>
+<p><span>修改host為IPV6 </span></p>
+<p>存檔完輸入 <span>python3 wsgi.py</span></p>
+<p><span></span>在外部打開自己的網頁</p>
+<p><a href="https://[2001:288:6004:17:2020:1:0:7112]:19443"><span>https://[</span><span>2001:288:6004:17:2020:2::7207]:17443</span></a></p>
+<p><img alt="" height="795" src="http://mde.tw/cdbw14-1/images/4.PNG" width="931"/></p>
+<p>完成</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Fv76vqWU4aI" width="560"></iframe></p>
+<p>之後用putty向<span>Virtual Box連線</span></p>
+<p>輸入IPV6 再到X1設定</p>
+<p>存檔並開啟，帳密都是kmol2020</p>
+<p>用Xlaunch快速下一步</p>
+<p>在putty打xterm&amp;就可操作</p>
+<p>到<span>tmp/</span><span>cd2020pj1/docs/cmsimde</span></p>
+<p><span>打python3 wsgi.py開啟</span></p>
+<p><span>就可以用了</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2UIQxYnbKvw" width="560"></iframe></span></p>
+<p><span></span></p>
